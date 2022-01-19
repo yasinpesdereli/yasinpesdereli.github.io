@@ -1,0 +1,1213 @@
+
+html {
+	scroll-behavior: smooth;
+}
+#landingg, #aboutt, #jobs-donee, #commentss ,#all_comments, #contactt{
+	background-color: #2b2d42;
+}
+#navbar {
+	
+	#logo{
+		padding-left: 8%;
+	}
+
+	.navbar-toggler-icon {
+		color: wheat;
+	}
+	.nav-link {
+		font-size: larger;
+
+		color: #e76f51;
+	}
+	.nav-link::after {
+		content: "";
+		display: block;
+		margin: auto;
+		height: 3px;
+		width: 0px;
+		background: transparent;
+		transition: width 0.5s ease, background-color 0.5s ease;
+	}
+	.nav-link:hover::after {
+		width: 100%;
+		background: #e56b6f;
+	}
+	#navbarText {
+		text-align: left;
+		padding-left: 50%;
+	}
+
+	img {
+		margin-left: -30px;
+		border-radius: 60px;
+		height: 90px;
+		width: 120px;
+	}
+	
+}
+#landing {
+	background-color: #2b2d42;
+
+	color: #ee6c4d;
+	padding-bottom: 30px;
+
+	h1 {
+		padding-top: 140px;
+		margin-bottom: 40px;
+		text-align: center;
+		font-weight: bold;
+	}
+	img {
+		display: block;
+		height: 200px;
+		width: 160px;
+		border-radius: 20px;
+		margin-left: 50%;
+	}
+	p {
+		margin-top: 3%;
+		width: 70%;
+		font-size: large;
+	}
+	#socialicons {
+		margin-left: 40%;
+		margin-right: 40%;
+		margin-top: 30px;
+		margin-bottom: 50px;
+
+		a {
+			text-decoration: none;
+			font-size: 30px;
+		}
+		a:hover {
+			text-decoration: none;
+			color: #7ed50e;
+		}
+
+		.fab-home:hover {
+			color: #7ed50e;
+		}
+	}
+	padding-bottom: 20px;
+}
+#about {
+	padding-top: 50px;
+	background-color: #2b2d42;
+	color: #ee6c4d;
+	padding-bottom: 7%;
+
+	h1 {
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+
+	img {
+		margin-top: 40px;
+		height: 60px;
+		width: 60px;
+		margin-bottom: 5px;
+	}
+	#skills_hor{
+		display: none;
+	}
+	.left {
+		margin-left: 90%;
+	}
+	.center {
+		margin-left: 50%;
+	}
+	.right {
+		margin-left: 10%;
+	}
+}
+#jobs-done {
+	background-color: #2b2d42;
+	color: #ee6c4d;
+	h1, p{
+		text-align: right;
+		padding-bottom: 40px;
+		font-weight: bold;
+	}
+	.column {
+		float: left;
+		width: 25%;
+		padding: 10px;
+	}
+	.column img {
+		width: 220px;
+		height: 145px;
+		border-radius: 8px;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.column img:hover {
+		opacity: 1;
+	}
+	.row::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	#expandedImgSection {
+		padding-top: 40px;
+		position: relative;
+		display: none;
+		padding-bottom: 50px;
+
+		img {
+			border-radius: 10px;
+		}
+	}
+	.closebutton {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		color: #ee6c4d;
+		font-size: 45px;
+		cursor: pointer;
+	}
+	.closebutton:hover {
+		color: #2b2d42;
+	}
+}
+#comments {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #2b2d42;
+	color: #ee6c4d;
+	text-align: center;
+	h1 {
+		padding-bottom: 40px;
+		font-weight: bold;
+	}
+	p{
+		margin-top: 10px;
+	}
+	.writing{
+		text-align: left;
+
+		#comment_author{
+			background-color: #f4f1de;
+		}
+
+		#comment_comment{
+			width: 80%;
+			height: 100px;
+			background-color: #f4f1de;
+		}
+		#submit_comment{
+			border: #2b2d42;
+			margin-top: 20px;
+			border-radius: 5px;
+			color: #2b2d42;
+			background-color: #ee6c4d;
+			margin-bottom: 30px;
+			
+		}
+		#submit_comment:hover{
+			background-color: wheat;
+			
+		}
+	}
+	.onecomment {
+		border: 2px solid transparent;
+		display: inline-block;
+		position: static;
+		width: 100%;
+
+		q {
+			font-style: italic;
+			margin-bottom: 10px;
+		}
+		a:hover {
+			cursor: pointer;
+			color: #7ed50e;
+		}
+		input{
+			border: none;
+			border-radius: 5px;
+			width: 30px;
+			margin-bottom: 15px;
+			
+		}
+		input:hover{
+			background-color: #17e4ef;
+		}
+	}
+	.onecomment:hover {
+		border: 2px solid #ee6c4d;
+		display: inline-block;
+		position: static;
+
+		border-radius: 8px;
+	}
+}
+#contact {
+	background-color: #2b2d42;
+	color: #ee6c4d;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: left;
+	h1 {
+		padding-bottom: 40px;
+		font-weight: bold;
+	}
+	p{
+		margin-bottom: -20px;
+	}
+	#contactMessage{
+		width: 80%;
+		height: 100px;
+	}
+	#submitMessage{
+		border: #2b2d42;
+		margin-top: 20px;
+		border-radius: 5px;
+		color: #2b2d42;
+		background-color: #ee6c4d;
+		
+	}
+	#submitMessage:hover{
+		background-color: #7ed50e;
+	}
+	#contactForm{
+		margin-top: 20px;
+		margin-left: 20%;
+	}
+	input{
+		margin-top: -50px;
+		background-color: #f4f1de;
+	}
+	textarea{
+		background-color: #f4f1de;
+	}
+	a{
+		color: #f4f1de;
+	}
+}
+@media only screen and (max-width: 991px) {
+	#navbar {
+		
+		.nav-link::after {
+			content: "";
+			display: block;
+			margin: auto;
+			height: 3px;
+			width: 0px;
+			background: transparent;
+			transition: width 0.5s ease, background-color 0.5s ease;
+		}
+		
+		#navbarText {
+			font-size: large;
+			text-align: left;
+			color: #e76f51;
+			padding-right: 50%;
+			
+		}
+	
+		img {
+			
+			border-radius: 60px;
+			height: 90px;
+			width: 120px;
+		}
+	}
+	#landing {
+		background-color: #2b2d42;
+	
+		color: #ee6c4d;
+		padding-bottom: 30px;
+	
+		h1 {
+			padding-top: 140px;
+			margin-bottom: 40px;
+			text-align: center;
+			font-weight: bold;
+		}
+		img {
+			display: block;
+			height: 200px;
+			width: 160px;
+			border-radius: 20px;
+			margin-left: 40%;
+			margin-top: 20px;
+		}
+		p {
+			margin-top: 3%;
+			width: 80%;
+			font-size: large;
+		}
+		#socialicons {
+			margin-left: 40%;
+			margin-right: 28%;
+			margin-top: 30px;
+			margin-bottom: 50px;
+	
+			a {
+				text-decoration: none;
+				font-size: 30px;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #7ed50e;
+			}
+	
+			.fab-home:hover {
+				color: #7ed50e;
+			}
+		}
+	}
+	#about {
+		padding-top: 50px;
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		padding-bottom: 7%;
+	
+		h1 {
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+	
+		img {
+			margin-top: 40px;
+			height: 60px;
+			width: 60px;
+			margin-bottom: 5px;
+		}
+		#skills{
+			display: none;
+		}
+		#skills_hor{
+			display: inline-block;
+			margin-left: 15%;
+			
+		}	
+		
+	}
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 160px;
+			height: 107px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	#navbar {
+		
+		.nav-link::after {
+			content: "";
+			display: block;
+			margin: auto;
+			height: 3px;
+			width: 0px;
+			background: transparent;
+			transition: width 0.5s ease, background-color 0.5s ease;
+		}
+		
+		#navbarText {
+			font-size: large;
+			text-align: left;
+			color: #e76f51;
+			padding-right: 50%;
+			
+		}
+	
+		img {
+			
+			border-radius: 60px;
+			height: 90px;
+			width: 120px;
+		}
+	}
+	#landing {
+		background-color: #2b2d42;
+	
+		color: #ee6c4d;
+		padding-bottom: 30px;
+	
+		h1 {
+			padding-top: 140px;
+			margin-bottom: 40px;
+			text-align: center;
+			font-weight: bold;
+		}
+		img {
+			display: block;
+			height: 200px;
+			width: 160px;
+			border-radius: 20px;
+			margin-left: 65%;
+			margin-top: 20px;
+		}
+		p {
+			padding-top: 230px;
+			width: 100%;
+			margin-left: -130px;
+			font-size: large;
+		}
+		#socialicons {
+			margin-left: 32%;
+			margin-right: 8%;
+			margin-top: 30px;
+			margin-bottom: 50px;
+	
+			a {
+				text-decoration: none;
+				font-size: 30px;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #7ed50e;
+			}
+	
+			.fab-home:hover {
+				color: #7ed50e;
+			}
+		}
+	}
+	#about {
+		padding-top: 50px;
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		padding-bottom: 7%;
+	
+		h1 {
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+	
+		img {
+			margin-top: 40px;
+			height: 60px;
+			width: 60px;
+			margin-bottom: 5px;
+		}
+		#skills{
+			display: none;
+		}
+		#skills_hor{
+			display: inline-block;
+			margin-left: 5%;
+			
+		}	
+		
+	}
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 120px;
+			height: 80px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+}
+@media only screen and (max-width: 530px) {
+	#navbar {
+		
+		.nav-link::after {
+			content: "";
+			display: block;
+			margin: auto;
+			height: 3px;
+			width: 0px;
+			background: transparent;
+			transition: width 0.5s ease, background-color 0.5s ease;
+		}
+		
+		#navbarText {
+			font-size: large;
+			text-align: left;
+			color: #e76f51;
+			padding-right: 50%;
+			
+		}
+	
+		img {
+			
+			border-radius: 60px;
+			height: 90px;
+			width: 120px;
+		}
+	}
+	#landing {
+		background-color: #2b2d42;
+	
+		color: #ee6c4d;
+		padding-bottom: 30px;
+	
+		h1 {
+			padding-top: 140px;
+			margin-bottom: 40px;
+			text-align: center;
+			font-weight: bold;
+		}
+		img {
+			display: block;
+			height: 200px;
+			width: 160px;
+			border-radius: 20px;
+			margin-left: 65%;
+			margin-top: 20px;
+		}
+		p {
+			padding-top: 230px;
+			width: 100%;
+			margin-left: -130px;
+			font-size: medium;
+		}
+		#socialicons {
+			margin-left: 32%;
+			margin-right: 8%;
+			margin-top: 30px;
+			margin-bottom: 50px;
+	
+			a {
+				text-decoration: none;
+				font-size: 30px;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #7ed50e;
+			}
+	
+			.fab-home:hover {
+				color: #7ed50e;
+			}
+		}
+	}
+	#about {
+		padding-top: 50px;
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		padding-bottom: 7%;
+	
+		h1 {
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+	
+		img {
+			margin-top: 40px;
+			height: 60px;
+			width: 60px;
+			margin-bottom: 5px;
+		}
+		#skills{
+			display: none;
+		}
+		#skills_hor{
+			display: inline-block;
+			margin-left: 2%;
+			
+		}	
+		
+	}
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 105px;
+			height: 70px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+}
+@media only screen and (max-width: 500px) {
+	
+	#landing {
+		
+		p {
+			padding-top: 230px;
+			width: 120%;
+			margin-left: -130px;
+			font-size: medium;
+		}
+		
+	}
+	#about {
+		padding-top: 50px;
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		padding-bottom: 7%;
+	
+		h1 {
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+	
+		img {
+			margin-top: 40px;
+			height: 40px;
+			width: 40px;
+			margin-bottom: 5px;
+		}
+		#skills{
+			display: none;
+		}
+		#skills_hor{
+			display: inline-block;
+			margin-left: 13%;
+			
+		}	
+		
+	}
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 100px;
+			height: 67px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+}
+@media only screen and (max-width: 451px) {
+	
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 90px;
+			height: 60px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+}
+@media only screen and (max-width: 416px) {
+	#landing {
+		
+		#socialicons {
+			margin-left: 24%;
+			margin-right: 20%;
+			margin-top: 30px;
+			margin-bottom: 50px;
+	
+			a {
+				text-decoration: none;
+				font-size: 30px;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #7ed50e;
+			}
+	
+			.fab-home:hover {
+				color: #7ed50e;
+			}
+		}
+	}
+	#about {
+		padding-top: 50px;
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		padding-bottom: 7%;
+	
+		h1 {
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+	
+		img {
+			margin-top: 40px;
+			height: 40px;
+			width: 40px;
+			margin-bottom: 5px;
+		}
+		#skills{
+			display: none;
+		}
+		#skills_hor{
+			display: inline-block;
+			margin-left: 5%;
+			
+		}	
+		
+	}
+	
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 80px;
+			height: 57px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+	
+}
+@media only screen and (max-width: 373px) {
+	#landing {
+		img{
+			margin-left: 47%;
+		}
+		p {
+			padding-top: 230px;
+			width: 180%;
+			margin-left: -130px;
+			font-size: medium;
+		}
+		#socialicons {
+			margin-left: 24%;
+			margin-right: 20%;
+			margin-top: 30px;
+			margin-bottom: 50px;
+	
+			a {
+				text-decoration: none;
+				font-size: 30px;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #7ed50e;
+			}
+	
+			.fab-home:hover {
+				color: #7ed50e;
+			}
+		}
+	}
+	#about {
+		padding-top: 50px;
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		padding-bottom: 7%;
+	
+		h1 {
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+	
+		img {
+			margin-top: 40px;
+			height: 40px;
+			width: 40px;
+			margin-bottom: 5px;
+		}
+		#skills{
+			display: none;
+		}
+		#skills_hor{
+			display: inline-block;
+			margin-left: 5%;
+			
+		}	
+		
+	}
+	
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 80px;
+			height: 57px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+	
+}
+@media only screen and (max-width: 361px) {
+	#landing {
+		img{
+			margin-left: 47%;
+		}
+		p {
+			padding-top: 230px;
+			width: 180%;
+			margin-left: -130px;
+			font-size: medium;
+		}
+		#socialicons {
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 30px;
+			margin-bottom: 50px;
+	
+			a {
+				text-decoration: none;
+				font-size: 30px;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #7ed50e;
+			}
+	
+			.fab-home:hover {
+				color: #7ed50e;
+			}
+		}
+	}
+	#about {
+		padding-top: 50px;
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		padding-bottom: 7%;
+	
+		h1 {
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+	
+		img {
+			margin-top: 40px;
+			height: 40px;
+			width: 40px;
+			margin-bottom: 5px;
+		}
+		#skills{
+			display: none;
+		}
+		#skills_hor{
+			display: inline-block;
+			margin-left: 1%;
+			
+		}	
+		
+	}
+	
+	#jobs-done {
+		background-color: #2b2d42;
+		color: #ee6c4d;
+		h1, p {
+			text-align: right;
+			padding-bottom: 30px;
+			font-weight: bold;
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 10px;
+		}
+		.column img {
+			width: 75px;
+			height: 50px;
+			border-radius: 8px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.column img:hover {
+			opacity: 1;
+		}
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		#expandedImgSection {
+			padding-top: 40px;
+			position: relative;
+			display: none;
+			padding-bottom: 50px;
+	
+			img {
+				border-radius: 10px;
+			}
+		}
+		.closebutton {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			color: #ee6c4d;
+			font-size: 45px;
+			cursor: pointer;
+		}
+		.closebutton:hover {
+			color: #2b2d42;
+		}
+	}
+	
+}
+
+
+
